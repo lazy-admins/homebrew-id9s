@@ -10,7 +10,7 @@ class Id9s < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lazy-admins/id9s/releases/download/v0.1.2/id9s_darwin_amd64.tar.gz"
-      sha256 "950ee0d2775c53f842dbe6d1e4d71abab132346e40a9c8d44063ba1234382b84"
+      sha256 "f37f9812152438431a0d58d15a601036853dc8e213c4c3d182c8d4c5a9797783"
 
       define_method(:install) do
         bin.install "id9s"
@@ -18,7 +18,7 @@ class Id9s < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lazy-admins/id9s/releases/download/v0.1.2/id9s_darwin_arm64.tar.gz"
-      sha256 "b95dbc5c5189d2ed06631e8774f62527dcfb13aaa9a2dbafe174c629ebc3e2c7"
+      sha256 "ea765ace09953c842d2d9e387861a52221d79f922e227cea9cb5c7c711dd1abb"
 
       define_method(:install) do
         bin.install "id9s"
@@ -29,14 +29,14 @@ class Id9s < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lazy-admins/id9s/releases/download/v0.1.2/id9s_linux_amd64.tar.gz"
-      sha256 "4ab708ee6e00bb42513ef3d439ac8146fc727d1bcd69259382d865ec56d94749"
+      sha256 "ac30eb6426d8166fbad0c2ce1028c40a7abfc233277ca8f3542dd0559521da43"
       define_method(:install) do
         bin.install "id9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lazy-admins/id9s/releases/download/v0.1.2/id9s_linux_arm64.tar.gz"
-      sha256 "0fc8e69fecfc14bd1d199c7f561aca69d0f5955a2c1da6e2588cdb483467dbe4"
+      sha256 "e0ce73c11203f9d687a31309438926255f2f94d46a9bedeb90456437c9e64613"
       define_method(:install) do
         bin.install "id9s"
       end
