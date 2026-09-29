@@ -5,20 +5,20 @@
 class Id9s < Formula
   desc "Identity-nines — hybrid identity (AD on-prem, Entra ID) TUI at terminal speed, inspired by k9s"
   homepage "https://github.com/lazy-admins/id9s"
-  version "0.5.8"
+  version "0.5.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.8/id9s_darwin_amd64.tar.gz"
-      sha256 "a996a4b42f444e66241f5c34abdd6f7a5b27af6345a258259ea0a97d4b15b9cd"
+      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.9/id9s_darwin_amd64.tar.gz"
+      sha256 "420be674949a0fe1a20f24d4f057971f02abc405e224421f3a82574b22d51322"
 
       define_method(:install) do
         bin.install "id9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.8/id9s_darwin_arm64.tar.gz"
-      sha256 "6a8a30d70f3cefae1098d69ea6972d0c7edb9807e39b5c3c3651796ee0de63ae"
+      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.9/id9s_darwin_arm64.tar.gz"
+      sha256 "51d249364825d99741935afcc1a24f890d67fe574c6c6d8f14897e8491d40943"
 
       define_method(:install) do
         bin.install "id9s"
@@ -28,15 +28,15 @@ class Id9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.8/id9s_linux_amd64.tar.gz"
-      sha256 "e4e7cb7475a8aed0b832cb1704312893f2f9f34aa1a7094f74aed4e131c2d7f2"
+      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.9/id9s_linux_amd64.tar.gz"
+      sha256 "9a9646ec71b01193ad9d7248bd5fd1bf94acb12772f158f054246060e11f2706"
       define_method(:install) do
         bin.install "id9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.8/id9s_linux_arm64.tar.gz"
-      sha256 "b719f62554e4f9b93b0bd8911f3f50fb7d4103a27a013a9369665e7daf0379b8"
+      url "https://github.com/lazy-admins/id9s/releases/download/v0.5.9/id9s_linux_arm64.tar.gz"
+      sha256 "51779ad53aad6220fcdc4ba7f1ae3d83b1784d805518829302232a43026de236"
       define_method(:install) do
         bin.install "id9s"
       end
